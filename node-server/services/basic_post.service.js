@@ -1,6 +1,3 @@
-// For converting files to binary
-var Binary = require('mongodb').Binary;
-
 // Retrieve the basic post model
 var BasicPost = require('../models/basic_post.model')
 

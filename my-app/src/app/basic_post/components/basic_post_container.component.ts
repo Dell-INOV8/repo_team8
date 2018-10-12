@@ -30,5 +30,21 @@ export class BasicPostContainerComponent
     ngOnInit() 
     {
         // TODO: retrieve the posts here
+        // Use dummy data for now
+        var data1 : BasicPostModel = new BasicPostModel();
+        data1.gifLink = 
+        data1.postDescription = "This is the description for post 1";
+
+        var data2 : BasicPostModel = new BasicPostModel();
+        data2.gifLink = 
+        data2.postDescription = "This is the description for post 2";
+
+        var data3 : BasicPostModel = new BasicPostModel();
+        data3.gifLink = 
+        data3.postDescription = "This is the description for post 3";
+
+        this.mPosts.push( data1 );
+        this.mPosts.push( data2 );
+        this.mPosts.push( data3 );
     }
 }

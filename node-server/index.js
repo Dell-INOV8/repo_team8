@@ -31,6 +31,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Example url:
+//http://localhost:8000/api/main-post/basic-post
+
 // Route setup
 var mainApi = require('./routes/app_routes.router');
 app.use('/api', mainApi);

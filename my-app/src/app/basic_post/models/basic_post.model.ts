@@ -1,4 +1,5 @@
 export class BasicPostModel 
 {
-    postDescription: String
+    postDescription: String;
+    gifLink: String;
 }

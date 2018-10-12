@@ -2,7 +2,9 @@ var mongoose = require('mongoose')
 var mongoosePaginate = require('mongoose-paginate')
 
 var BasicPostSchema = new mongoose.Schema({
-    postDescription: String
+    postDescription: String,
+    gifData: String,
+    upvotes: Number
 });
 
 BasicPostSchema.plugin(mongoosePaginate);

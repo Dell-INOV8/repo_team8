@@ -1,0 +1,13 @@
+<div>
+    <form ref='uploadForm' 
+        id='uploadForm' 
+        action='http://localhost:8000/api/main-post/upload-gif' 
+        method='post' 
+        encType="multipart/form-data"
+        (ngSubmit) = "uploadFile($event)">
+    <input type="file" (change) = "onFileChange($event)" name="sampleFile" />
+    <input type='submit' value='Upload!' />
+    </form>
+
+    <button (click) = "formSubmit()"> Button text </button> 
+</div>

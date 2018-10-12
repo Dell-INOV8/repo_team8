@@ -13,4 +13,7 @@ router.get('/basic-post', BasicPostController.ReadBasicPosts);
 // Delete
 router.post('/basic-post', BasicPostController.CreateBasicPosts);
 
+// File Upload
+router.post('/upload-gif', BasicPostController.UploadGif);
+
 module.exports = router;

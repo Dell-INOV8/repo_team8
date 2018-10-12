@@ -30,11 +30,9 @@ import { PostRequestService } from './services/post_retrieval.service';
   ],
   exports: [
     BasicPostContainerComponent,
-    BasicPostComponent
+    BasicPostComponent,
     PostFormComponent
   ],
 })
 export class BasicPostModule { 
-  gifLink : String = "";
-  postDescription : String = "";
 }

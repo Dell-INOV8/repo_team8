@@ -7,13 +7,10 @@ var path = require('path')
 // set the root directory
 var app = express();
 
-// set port; uses web port if available
-var port = process.env.PORT || 8000;
-
 // connect to mongoose here
 var mongoose = require('mongoose')
 mongoose.Promise = bluebird
-mongoose.connect('serverurl', { useNewUrlParser: true })
+mongoose.connect('mongodb://127.0.0.1:27017/basic-posts', { useNewUrlParser: true   })
   .then(() => {console.log("Successful MongoDB connection")})
   .catch(() => {console.log("Failure MongoDB connection")});  
 
@@ -37,5 +34,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Route setup
 var mainApi = require('./routes/app_routes.router');
 app.use('/api', mainApi);
+
+var port = (process.env.PORT || 8000);
+app.listen(port);
 
 module.exports = app;

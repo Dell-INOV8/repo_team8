@@ -10,7 +10,7 @@ exports.ReadBasicPosts = async function(req, res, next) {
     var limit = req.query.limit ? req.query.limit : 10;
 
     try {
-        var retrievedBasicPosts = await TodoService.getTodos({}, page, limit)
+        var retrievedBasicPosts = await BasicPostService.ReadBasicPost({}, page, limit)
         return res.status(200).json({status: 200, data: retrievedBasicPosts, message: "Successfully Retrieved Posts"});
     } catch ( error ) {
         return res.status(400).json({status: 400, message: error.message});

@@ -3,6 +3,6 @@ var router = express.Router()
 
 var BasicPostRoutes = require('./basic_post.routes');
 
-router.use('/basic_post', BasicPostRoutes);
+router.use('/main-post', BasicPostRoutes);
 
 module.exports = router;

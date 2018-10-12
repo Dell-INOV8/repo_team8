@@ -21,6 +21,9 @@ import { PostRequestService } from './services/post_retrieval.service';
   ],
   providers: [
     PostRequestService
-  ]
+  ],
+  exports: [
+    BasicPostContainerComponent 
+  ],
 })
 export class BasicPostModule { }

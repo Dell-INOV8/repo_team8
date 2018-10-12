@@ -18,7 +18,9 @@ exports.ReadBasicPost = async function( query, page, limit )
 exports.CreateBasicPost = async function( basicPost ) 
 {
     var newBasicPost = new BasicPost({
-        postDescription : basicPost.postDescription
+        postDescription : basicPost.postDescription,
+        gifData : basicPost.gifData,
+        upvotes : basicPost.upvotes
     });
 
     try {

@@ -1,1 +1,9 @@
-<p> This is a post container </p>
+<!-- <p> This is a post container </p> -->
+<div>
+<ul>
+  	<div ngFor = "let p of mPosts">
+  		<basic-post [(mCurrentPost)] = "p" type="BasicPostModel"> </basic-post>
+  	</div>
+ 
+</ul>
+</div>

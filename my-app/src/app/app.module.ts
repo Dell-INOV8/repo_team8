@@ -4,7 +4,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BasicPostModule } from './basic_post/basic_post.module'
-
+import { CommonModule } from "@angular/common";
 import { AppComponent } from './main_container/components/app.component';
 
 @NgModule({

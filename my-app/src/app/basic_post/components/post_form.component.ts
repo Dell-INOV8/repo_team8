@@ -1,8 +1,9 @@
 // Component representin a single basic post (gif + description)
 
-import { Component } from '@angular/core';
-
+import { Component, NgModule } from '@angular/core';
 import { BasicPostModel } from '../models/basic_post.model';
+import { CommonModule } from '@angular/common';
+
 
 import { PostRequestService } from '../services/post_retrieval.service';
 
@@ -17,11 +18,13 @@ export class BasicPostComponent
 
     // The information that the user enters (binds to these variables)
     mPostDescription: String = "";
+    mGifLink: String = ""; 
 
     // =============== LIFECYCLE METHODS =================
 
     // Declare IOC dependencies here
     constructor( mPostRequestService : PostRequestService ) {}
+    
 
     // ================= EVENT METHODS ===================
 
@@ -33,6 +36,7 @@ export class BasicPostComponent
         theNewPost : BasicPostModel = 
         {
             postDescription : this.mPostDescription
+            gifLink: this.mGifLink
         }
         */
     }

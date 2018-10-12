@@ -1,7 +1,7 @@
 // module for the post list
 
 // MODULES
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 // COMPONENTS
@@ -23,7 +23,11 @@ import { PostRequestService } from './services/post_retrieval.service';
     PostRequestService
   ],
   exports: [
-    BasicPostContainerComponent 
+    BasicPostContainerComponent,
+    BasicPostComponent
   ],
 })
-export class BasicPostModule { }
+export class BasicPostModule { 
+  gifLink : String = "";
+  postDescription : String = "";
+}

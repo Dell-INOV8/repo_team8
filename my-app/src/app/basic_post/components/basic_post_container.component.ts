@@ -32,15 +32,15 @@ export class BasicPostContainerComponent
         // TODO: retrieve the posts here
         // Use dummy data for now
         var data1 : BasicPostModel = new BasicPostModel();
-        data1.gifLink = 
+        data1.gifLink = 'https://media.giphy.com/media/qPa9vUYCUrx6w/giphy.gif';
         data1.postDescription = "This is the description for post 1";
 
         var data2 : BasicPostModel = new BasicPostModel();
-        data2.gifLink = 
+        data2.gifLink = 'https://media.giphy.com/media/qPa9vUYCUrx6w/giphy.gif';
         data2.postDescription = "This is the description for post 2";
 
         var data3 : BasicPostModel = new BasicPostModel();
-        data3.gifLink = 
+        data3.gifLink = 'https://media.giphy.com/media/qPa9vUYCUrx6w/giphy.gif';
         data3.postDescription = "This is the description for post 3";
 
         this.mPosts.push( data1 );

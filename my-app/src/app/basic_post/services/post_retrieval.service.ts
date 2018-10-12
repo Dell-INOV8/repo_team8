@@ -8,6 +8,7 @@ import { PostFilterModel } from '../models/post_filter.model';
 @Component({})
 export class PostRequestService 
 {
+    /*
     // ========================= DATA ========================
     // Path in which we interact with our api
     private mPath = 'http://localhost:8000/api/main-post/basic-post';
@@ -42,4 +43,5 @@ export class PostRequestService
         // make the request
         return this.http.post( theUrl );            
     }
+    */
 }
